@@ -470,7 +470,7 @@ var layout = {
 
 var config = {
     mapboxAccessToken:
-        "pk.eyJ1IjoibGVhbmRyYWwiLCJhIjoiY2t2cXNsNzZhMjQ3eTMya2xrd2t3NnZvdCJ9.suIc4nk9381xM4RvcoNjPQ",
+        "YOUR TOKEN HERE",
 };
 
 Plotly.newPlot(TESTER, data, layout, config);

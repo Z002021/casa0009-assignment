@@ -113,7 +113,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
         }
 			},
       {
-				text: 'Select species names in Legend zone, the interactive map will display<br>the distribution of selcted one. Hover over the points, it will present<br>the year and name of species. <br><br>Zoom in, red polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over<br>the chart, it will display the number of selected species.',
+				text: 'Select species names in Legend zone, the interactive map will display<br>the distribution of selected one. Hover over the points, it will present<br>the year and name of species. <br><br>Zoom in, green polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over<br>the chart, it will display the number of selected species.',
 				x: 0.977,
 				xref: 'paper',
 				xanchor : 'auto',

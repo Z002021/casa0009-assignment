@@ -197,7 +197,7 @@ d3.json("https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment
 		},
 		
 		annotations: [{
-				text: 'Use the drop down list above <br>to select a hotspot to focus on. <br><br>The map shows the locations <br>of the hotspots, while the plot <br>shows the species richness <br>density and evenness of the <br>hotspots. <br><br>Hover over the hotspot on the <br>map and the graph to view <br>information about the hotspot.',
+				text: 'Use the dropdown list above <br>to select a hotspot to focus on. <br><br>The map shows the locations <br>of the hotspots, while the plot <br>shows the species richness <br>density and evenness of the <br>hotspots. <br><br>Hover over the hotspot on the <br>map and the graph to view <br>information about the hotspot.',
 				x: -0.05,
 				xref: 'paper',
 				y: 0,

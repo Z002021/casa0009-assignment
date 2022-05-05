@@ -1,20 +1,20 @@
 // Function for unpacking rows
 function unpack(rows, key) {
 	return rows.map(function(row) {
-		return row[key]; 
+		return row[key];
 	});
 }
 
 // Load data and map/plot
 d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv', function(rows){
 
-	
+
 	// Get species list
 	var species_Array = unpack(rows, 'species');
 	var species = [...new Set(species_Array)];
 	species.sort()
-	
-	
+
+
 	// Data for map
 	var data_map = species.map(function(species) {
 		var rowsFiltered = rows.filter(function(row) {
@@ -48,10 +48,10 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 
 		};
 	});
-	
-	
+
+
 	d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv', function(rows_cnt){
-		
+
 		var data_graph = species.map(function(species) {
 			var rowsFiltered = rows_cnt.filter(function(row) {
 				return (row.species === species);
@@ -68,17 +68,18 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 				mode: 'lines+markers'
 			};
 		});
-		
+
 		console.log(data_graph)
 
 
-   
-		
+
+
 		// Combine the data traces for map and graph
 		var data = data_map.concat(data_graph);
-		
-		
-		var layout = {
+
+
+		var layout =
+		{
 
 			paper_bgcolor: 'white',
 			plot_bgcolor: 'white',
@@ -90,6 +91,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 				y: 1.08,
 				xref: 'paper',
 				yref: 'paper',
+
 				text: 'Critically Endangered Species in England',
 				showarrow: false,
 				font: {
@@ -97,7 +99,8 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
           size: 30,
           family: 'Arial'
         }
-			},{
+			},
+			{
 				x: 0,
 				y: 0.38,
 				xref: 'paper',
@@ -110,10 +113,10 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
         }
 			},
       {
-				text: 'Select species names in Legend zone,<br>the interactive map will display the distribution of selcted one.<br>Hover over the points, it will present year and name of species.<br>Zoom in,red polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts,<br>hover over the chart, it will display the number of selected species.',
-				x: 0.5,
+				text: 'Select species names in Legend zone, the interactive map will display the distribution of <br>selcted one. Hover over the points, it will present year and name of species. Zoom in, <br>red polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over the chart,<br>it will display the number of selected species.',
+				x: 1,
 				xref: 'paper',
-				y: 0.2,
+				y: 1,
 				yref: 'paper',
 				align: 'left',
 				showarrow: false,
@@ -127,7 +130,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 
 			legend:{'orientation':'v',
 		            font:{
-                     size:12,
+                     size:13,
                      color:'black'
 		            },
 		            tracegroupgap:2,
@@ -135,7 +138,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
                 bordercolor: '#FFFFFF',
                 borderwidth: 1
 		        },
-		
+
 
 			mapbox: {
 
@@ -148,56 +151,48 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 	    showlegend:true,
 	    opacity:0.5,
 	    marker:{size:5}
-	    
+
       },
 ],
 
 				center: {
-					lat: 53, 
+					lat: 53,
 					lon: -1
 				},
 				domain: {
 					x: [0,0.45],
-					y: [0.4,1]
+					y: [0.2,1]
 				},
 				style: 'carto-positron',
 				zoom: 5,
-      
+
 			},
-		
-		
+
+
 			xaxis: {
 				domain: [0.55, 1],
 				title: {
 					text: 'Year'
 				}
 			},
-		
+
 			yaxis: {
-				domain: [0.45, 1],
+				domain: [0.25, 0.8],
 				title: {
 					text: 'Counts'
 				}
 			}
 
     }
-		
+
 		// Configuration for map
 		Plotly.setPlotConfig({
 			mapboxAccessToken: "pk.eyJ1IjoibmdsaWFuZ3dlaTE1IiwiYSI6ImNsMXhvdzB1bDAyNzkzZG43NzF2ajM3Y2EifQ.RnupTY7Atp7LreQEpiANLA"
 		});
-		
+
 		Plotly.newPlot('map', data, layout);
-		
-		
+
+
 	})
-	
+
 });
-
-
-
-
-
-
-
-

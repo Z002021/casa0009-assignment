@@ -87,16 +87,16 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 			font: {color: 'black',size:12},
 			colorbar: false,
 			annotations: [{
-				x: 0.55,
+				x: 0,
 				y: 1.08,
 				xref: 'paper',
 				yref: 'paper',
 
-				text: 'Critically Endangered Species in England',
+				text: ' ',
 				showarrow: false,
 				font: {
           color: "black",
-          size: 30,
+          size: 23,
           family: 'Arial'
         }
 			},
@@ -113,18 +113,20 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
         }
 			},
       {
-				text: 'Select species names in Legend zone, the interactive map will display the distribution of <br>selcted one. Hover over the points, it will present year and name of species. Zoom in, <br>red polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over the chart,<br>it will display the number of selected species.',
-				x: 1,
+				text: 'Select species names in Legend zone, the interactive map will display<br>the distribution of selcted one. Hover over the points, it will present<br>the year and name of species. <br><br>Zoom in, red polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over<br>the chart, it will display the number of selected species.',
+				x: 0.977,
 				xref: 'paper',
+				xanchor : 'auto',
+				align: 'left',
 				y: 1,
 				yref: 'paper',
-				align: 'left',
+				yanchor: 'top',
 				showarrow: false,
 				bordercolor: 'black',
 				borderpad: 5,
 				font: {
           color: "black",
-          size: 12
+          size: 12.5
         }
 			}],
 
@@ -133,7 +135,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
                      size:13,
                      color:'black'
 		            },
-		            tracegroupgap:2,
+		            tracegroupgap:6,
 		            bgcolor: '#E2E2E2',
                 bordercolor: '#FFFFFF',
                 borderwidth: 1

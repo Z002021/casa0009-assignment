@@ -26,7 +26,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Introdction</a></li>
                         <li class="nav-item"><a class="nav-link" href="#partone">Part One</a></li>
                         <li class="nav-item"><a class="nav-link" href="#parttwo">Part Two</a></li>
                         <li class="nav-item"><a class="nav-link" href="#partthree">Part Three</a></li>
@@ -39,24 +39,31 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Biodiversity of England</h1>
+                        <h1 class="text-white font-weight-bold">Biodiversity</h1>
+                        <h1 class="text-white font-weight-bold">of</h1>
+                        <h1 class="text-white font-weight-bold">England</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">We should preserve every scrap of biodiversity as priceless while we learn to use it and come to understand what it means to humanity. ~E.O.Wilson</p>
-                        <a class="btn btn-primary btn-xl" href="#about">START YOUR JOURNEY</a>
+                        <p class="text-dgreen4 mb-5">We should preserve every scrap of biodiversity as priceless while we learn to use it and come to understand what it means to humanity. ~E.O.Wilson</p>
+                        <!-- <a class="btn btn-primary btn-xl" href="#about">START YOUR JOURNEY</a> -->
                     </div>
                 </div>
             </div>
         </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container-fluid px-4 px-lg-5 h-100">
+        <!-- Introduction-->
+        <section class="page-section bg-primary bg-opacity-78 pb-5" id="about">
+            <div class="container-fluid px-4 px-lg-5 h-auto">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">Introduction</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">A Brief Introduction of our Project!</p>
+                        <p class="text-white-50 mb-4">Biodiversity is the name we give to the variety of all the plants, animals, bacteria and fungi with which we share the planet.  It is the range of species found in every habitat on Earth. Biodiversity is undoubtedly important for all of us. The processes that from keeping our reservoirs clean to the food in the fields growing are all underpinned by the wildlife - or biodiversity - that surrounds it, and without any of these, other species simply would not be able to survive. It is not the mere presence of these species that matters most but their relationships with each other and how they interact to create a complex network of life.
+
+However, as humans change the environment, from building roads to digging up fields, we chip away at this diversity of life, reducing the number of species that are found in any one place. This is causing species around the planet to decline at a concerning speed.
+
+In this project, we will investigate the situation of biodiversity in England and try to provide you more valuable information.
+</p>
                         <!-- <a class="btn btn-light btn-xl" href="#partone">Get Started!</a> -->
                     </div>
                 </div>
@@ -64,10 +71,14 @@
         </section>
         <!-- Part One-->
         <section class="page-section" id="partone">
-            <div class="container-fluid">
-                <h2 class="text-start mt-0">Part One</h2>
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center text-dgreen5 mt-0">Part One</h2>
+                <hr class="divider-green" />
+            </div>
+            <div class="container-fluid px-3 pb-5">
+                <h2 class="text-dgreen2 mt-0 px-3 fs-5">Overview</h2>
                 <!-- <hr class="divider-green" /> -->
-                <p class = "text-black mb-1"> Add some comments here.</P>
+                <p class = "text-dgreen3 mb-1 px-3 pt-3 pb-4">In this part, we use three indicators - occurrences density (Occ. Density), species density (Sp. Density), and species density (Sp. Evenness) - to reflect the level of biodiversity in England.</P>
                 <div class="container-fluid px-4 px-lg-0">
                   <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
                 	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
@@ -79,99 +90,54 @@
             </div>
         </section>
         <!-- Part Two-->
-        <section class="page-section bg-primary" id="parttwo">
-            <div class="container-fluid">
-                <h2 class="text-start mt-0">Part Two</h2>
-                <p class="text-black mb-1"> Add some comments here.</p>
-                <!-- <hr class="divider-green" /> -->
-                <div class="container-fluid px-4 px-lg-0">
+        <section class="page-section bg-primary bg-opacity-78" id="parttwo">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center text-white mt-0">Part Two</h2>
+                <hr class="divider-lgreen" />
+            </div>    
+            <div class="container-fluid px-5 px-lg-0">
+                <h2 class="text-white mt-0 px-4 fs-5">Endangered Species</h2>
+                <p class="text-white-50 mb-1 px-4 pt-3 pb-4">In this part, we will look at the distribution of 25 critically endangered species in England during 2012 and 2021 and how the amount have changed.</p>
+                <div class="container-fluid px-4 px-lg-0 pb-5">
                   <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
                 	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
-                  <script src='./hotspot_api.js'></script>
-                  <div id='hotspot' style='height: 500px'><!-- Plotly chart will be drawn inside this DIV --></div>
+                  <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js?ver=1.10.2'></script>
+                  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+                  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+                  <div id="map" style='height: 1000px;'></div>
+                  <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous"
+                  ></script>
+
+                  <script src='./output3_endangered_species.js'></script>
+
                 </div>
             </div>
         </section>
 
 
-
-
-        <!-- <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Call to action-->
-        <!-- <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-            </div>
-        </section> -->
-
-
-
         <!-- Part Three-->
         <section class="page-section" id="partthree">
-          <h2 class="text-center mt-0">Part Three</h2>
-          <div class="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158451.35884438863!2d-0.23173917622830809!3d51.53922516932763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1649872181864!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="container px-4 px-lg-5">
+                <h2 class="text-center text-dgreen5 mt-0">Part Three</h2>
+                <hr class="divider-green" />
           </div>
+          <div class="container-fluid px-4">
+            <h2 class="text-dgreen2 mt-0 px-3 fs-5">Zoom in to London</h2>
+            <p class="text-degreen3 mt-0 mb-1 px-3 pt-3">For this part, a two-step clustering was used to identify and characterise the biodiversity hotspots in London. OPTICS was fist performed to identify hotspots with high density of occurrences. K-Means clustering was then used to categorise the biodiversity quality of each hotspots (i.e., species richness density and species evenness).</p>
+            <div class="container-fluid px-4 px-lg-0 ">
+              <script src='https://cdn.plot.ly/plotly-2.11.1.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+              <script src='./hotspot_api.js'></script>
+              <div id='hotspot' style='height: 500px'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+            </dic>
+
+
         </section>
 
         <!-- Footer-->

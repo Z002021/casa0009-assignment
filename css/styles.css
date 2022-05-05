@@ -18,7 +18,7 @@
   --bs-red: #dc3545;
   --bs-orange: #f4623a;
   --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-green: #0c5030;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
@@ -5810,9 +5810,21 @@ progress {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted {
+.text-dgreen {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #020b06ac !important;
+}
+.text-dgreen2 {
+  --bs-text-opacity: 1;
+  color: #062113ca !important;
+}
+.text-dgreen3 {
+  --bs-text-opacity: 1;
+  color: #0b2416b9 !important;
+}
+.text-dgreen4 {
+  --bs-text-opacity: 1;
+  color: #f8fefce8 !important;
 }
 
 .text-black-50 {
@@ -5822,7 +5834,7 @@ progress {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(233, 236, 235, 0.925) !important;
 }
 
 .text-reset {
@@ -5920,6 +5932,10 @@ progress {
 
 .bg-opacity-75 {
   --bs-bg-opacity: 0.75;
+}
+
+.bg-opacity-85 {
+  --bs-bg-opacity: 0.90;
 }
 
 .bg-opacity-100 {
@@ -9338,7 +9354,7 @@ body {
 }
 
 .page-section {
-  padding:5rem 0;
+  padding:2rem 0;
 }
 
 .text-white-75 {

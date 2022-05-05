@@ -5814,17 +5814,25 @@ progress {
   --bs-text-opacity: 1;
   color: #020b06ac !important;
 }
+
 .text-dgreen2 {
   --bs-text-opacity: 1;
   color: #062113ca !important;
 }
+
 .text-dgreen3 {
   --bs-text-opacity: 1;
   color: #0b2416b9 !important;
 }
+
 .text-dgreen4 {
   --bs-text-opacity: 1;
   color: #f8fefce8 !important;
+}
+
+.text-dgreen5 {
+  --bs-text-opacity: 1;
+  color: #020b06fc !important;
 }
 
 .text-black-50 {
@@ -9387,6 +9395,14 @@ hr.divider-green{
   max-width: 3.25rem;
   margin: 1.5rem auto;
   background-color: #647A43;
+  opacity: 1;
+}
+
+hr.divider-lgreen{
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f0feda;
   opacity: 1;
 }
 

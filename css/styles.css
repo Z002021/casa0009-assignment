@@ -5716,6 +5716,10 @@ progress {
   text-align: center !important;
 }
 
+.text-justify{
+  text-align: justify !important;
+}
+
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -9315,6 +9319,13 @@ hr.divider-lgreen{
   margin: 1.5rem auto;
   background-color: rgba(233, 236, 235, 0.925);
   opacity: 1;
+}
+hr.divider-footer{
+  height: 0.1rem;
+  max-width: 5rem;
+  margin: 1rem auto;
+  background-color: rgba(233,236,235,0.925) ;
+  opacity: 0.5;
 }
 
 #mainNav {

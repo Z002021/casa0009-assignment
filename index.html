@@ -110,27 +110,21 @@
                         <h2 class="text-dgreen3 mt-0">Introduction</h2>
                         <hr class="divider divider-green" />
                         <p class="text-dgreen3 mb-4">
-                            Biodiversity is the name we give to the variety of
-                            all the plants, animals, bacteria and fungi with
-                            which we share the planet. It is the range of
-                            species found in every habitat on Earth.
-                            Biodiversity is undoubtedly important for all of us.
-                            The processes that from keeping our reservoirs clean
-                            to the food in the fields growing are all
-                            underpinned by the wildlife - or biodiversity - that
-                            surrounds it, and without any of these, other
-                            species simply would not be able to survive. It is
-                            not the mere presence of these species that matters
-                            most but their relationships with each other and how
-                            they interact to create a complex network of life.
-                            However, as humans change the environment, from
-                            building roads to digging up fields, we chip away at
-                            this diversity of life, reducing the number of
-                            species that are found in any one place. This is
-                            causing species around the planet to decline at a
-                            concerning speed. In this project, we will
-                            investigate the situation of biodiversity in England
-                            and try to provide you more valuable information.
+                          Biodiversity is the variety of all the plants, animals, bacteria and fungi
+                          with which we share the planet. It is the range of species found in every
+                          habitat on Earth. Biodiversity is undoubtedly important for all of us. From
+                          keeping our reservoirs clean to the growth of food in the fields, all these
+                          processes are underpinned by the wildlife - or biodiversity - that surrounds it,
+                          and without any of these, other species simply would not be able to survive.
+                          It is not the mere presence of these species that matters most, but their
+                          relationships with each other and how they interact that create a complex
+                          network of life. ​<br><br>However, as humans change the environment, from building roads
+                          to digging up fields, we chip away at this diversity of life, reducing the number
+                          of species that are found in any one place. This is causing biodiversity around the
+                          planet to decline at a concerning speed. ​
+                          <br><br>In this project, using open data comprising a mix of formal field surveys
+                          and crowdsourced data from the Global Biodiversity Information Facility, we investigate
+                          and provide valuable insights into the situation of biodiversity in England.​
                         </p>
                     </div>
                 </div>
@@ -138,19 +132,31 @@
         </section>
         <!-- Part One-->
         <section class="page-section bg-primary pb-0" id="partone">
-            <div class="container px-4 px-lg-5 pt-4">
-                <h2 class="text-center text-white-50 mt-0">Part One</h2>
+            <div class="container px-4 col-lg-10 px-lg-5 pt-4">
+                <h2 class="text-center text-white mt-0">Part One</h2>
                 <hr class="divider-lgreen" />
-            </div>
-            <div class="container-fluid px-3 pb-4">
-                <h2 class="text-white-50 mt-0 px-3 fs-5">Overview</h2>
-                <!-- <hr class="divider-green" /> -->
-                <p class="text-white-50 mb-1 px-3 pt-3 pb-4">
-                    In this part, we use three indicators - occurrences density
-                    (Occ. Density), species density (Sp. Density), and species
-                    density (Sp. Evenness) - to reflect the level of
-                    biodiversity in England.
+                <h4 class="text-center text-white mt-0">Overview of Biodiversity in England​</h4>
+                <p class="text-white-50 text-justify mb-1 px-3 pt-3 pb-5">
+                  We first measure the level of biodiversity for each Local Authority
+                  District (LAD) for the period of 2012 to 2021 using three metrics:​<br>
+                  - Occurrences density (Occ. Density): the number of occurrences per unit area​<br>
+                  - Species richness density (Sp. Density): the number of unique species per unit area​<br>
+                  - Species evenness (Sp. Evenness): a measure of the relative abundance of all species
+                  in the LAD on a scale of 0 to 1​<br><br>
+
+                  The choropleth map and boxplot allows us to investigate the biodiversity level in
+                  different parts of England and how they have changed over the years. We can see that
+                  generally, while occurrences density and species richness density have improved the years,
+                  species evenness have declined. The improvement in biodiversity levels also seem to be
+                  unevenly distributed in different parts of England, as shown by the widening spread of
+                  occurrences density and species richness density, as well as increasing spatial concentration
+                  of LADs with higher biodiversity levels over the years.​
                 </p>
+
+            </div>
+            <div class="container-fluid text-center ">
+                <!-- <h2 class="text-white-50 mt-0 px-3 fs-5">Overview</h2> -->
+                <!-- <hr class="divider-green" /> -->
                 <div class="container-fluid px-4 pb-lg-0 px-lg-0">
                     <div id="overview" style="height: 550px">
                         <!-- Plotly chart will be drawn inside this DIV -->
@@ -160,17 +166,24 @@
         </section>
         <!-- Part Two-->
         <section class="page-section bg-primary bg-opacity-78" id="parttwo">
-            <div class="container px-4 px-lg-5 pt-lg-0 ">
-                <h2 class="text-center text-white-50 mt-0">Part Two</h2>
+            <div class="container px-4 col-lg-10 px-lg-5 pt-lg-0 ">
+                <h2 class="text-center text-white mt-0">Part Two</h2>
                 <hr class="divider-lgreen" />
-            </div>
-            <div class="container-fluid px-3 ">
-                <h2 class="text-white-50 mt-0 px-4 fs-5">Endangered Species</h2>
-                <p class="text-white-50 mb-1 px-4 pt-3 pb-4">
-                    In this part, we will look at the distribution of 25
-                    critically endangered species in England during 2012 and
-                    2021 and how the amount have changed.
+                <h4 class="text-center text-white mt-0">Locations of Critically Endangered Species​</h4>
+                <p class="text-white-50 text-justify mb-1 px-4 pt-3 pb-4">
+                  Here, we map out the locations of critically endangered species and compare
+                  them against the locations of National Nature Reserves (NNRs). We can see that there
+                  is almost no overlap between the two, even though the NNRs were established to protect
+                  some of the most important habitats and species in England. The siting of new NNRs in future
+                  can be informed by the locations of critically endangered species in future to provide better
+                  protection to them.​<br><br>
+
+                  The yearly counts for each critically endangered species are also plotted below to see how well
+                  they are doing over the years.​
                 </p>
+            </div>
+            <div class="container-fluid text-center ">
+
                 <div class="container-fluid px-4 px-lg-0 pb-0">
                     <div id="map" style="height: 1000px"></div>
                 </div>
@@ -179,27 +192,28 @@
 
         <!-- Part Three-->
         <section class="page-section bg-primary bg-opacity-78" id="partthree">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center text-white-50 mt-0">Part Three</h2>
+            <div class="container col-lg-10 px-4 px-lg-5">
+                <h2 class="text-center text-white mt-0">Part Three</h2>
                 <hr class="divider-lgreen" />
-            </div>
-            <div class="container-fluid px-4">
-                <h2 class="text-white-50 mt-0 px-3 fs-5">
-                    Where are the biodiversity hotspots in London?
-                </h2>
-                <p class="text-white-50 mt-0 mb-1 px-3 pt-3 pb-4">
-                    In this final part, areas with high biodiversity occurrences
-                    were identified using a clustering algorithm known as OPTICS
-                    (Ordering Points To Identify the Clustering Structure). 13
-                    biodiversity hotspots were identified in London, and K-means
-                    clustering was then used to partition these hotspots
-                    according to their species richness and evenness. Based on
-                    the results, two broad groups of hotspots can be identified
-                    -- those with high species richness and evenness, and those
-                    with low species richness and evenness.
+                <h4 class="text-white text-center mt-0">
+                    Biodiversity Hotspots in London​
+                </h4>
+                <p class="text-white-50 text-justify mt-0 mb-1 px-3 pt-3 pb-4">
+                  In this final part, areas with high density of occurrences were
+                  identified using a clustering algorithm known as OPTICS (Ordering Points
+                  To Identify the Clustering Structure). 13 biodiversity hotspots were identified in
+                  London, and K-means clustering was then used to partition these hotspots according to
+                  their species richness density and evenness. Based on the results, two types of hotspots
+                  were identified -- those with higher species richness density and evenness, and those
+                  with lower species richness density and evenness. The map shows the locations of these
+                  hotspots, while the charts shows their species richness density and evenness.​<br><br>
+                  Relevant authorities can consider prioritizing biodiversity conservation efforts in these
+                  hotspots, especially those with higher species richness density and evenness.​
                 </p>
+
             </div>
-            <div class="container-fluid px-4">
+
+            <div class="container-fluid text-center">
                 <div id="hotspot" style="height: 500px">
                     <!-- Plotly chart will be drawn inside this DIV -->
                 </div>
@@ -207,13 +221,41 @@
         </section>
 
         <!-- Footer-->
-        <footer class="bg-primary py-5">
-            <div class="container px-4 px-lg-5 ">
-                <div class="small text-center text-white-50">
-                    CASA0009 TeamChiSquared
-                </div>
-            </div>
-        </footer>
+        <!-- <footer class="bg-primary py-5">
+          <div class="small text-center text-white-50 col-lg-6">
+            <h6 class="text-white text-center mt-0"> Data Source:</h6>
+              <a href="https://www.gbif.org/occurrence/search" class="small text-center text-white-50">
+                Occurrences Data</a>
+              <hr class="divider-footer">
+              <a href="https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bfc/explore?location=55.217379%2C-3.265847%2C6.14"
+              class="small text-center text-white-50">Boundaries of Local Authority Districts</a>
+          </div> -->
+
+          <footer class="bg-primary py-5 pt-0 pb-4">
+              <div class="container px-4 px-lg-5 ">
+                <div class="text-white-50 ">
+                  <h6 class="text-white text-center mt-0"> Data Source</h6>
+                  <div class="px-lg-4 text-center">
+                    <a href="https://www.gbif.org/occurrence/search" class="small text-center text-white-50">
+                      Occurrences Data</a>
+                      <br>
+                    <a href="https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-december-2021-gb-bfc/explore?location=55.217379%2C-3.265847%2C6.14"
+                    class="small text-center text-white-50">Boundaries of Local Authority Districts</a>
+                    <br>
+                    <a href="https://environment.data.gov.uk/DefraDataDownload/?mapService=NE/NationalNatureReservesEngland&Mode=spatial"
+                    class="small text-center text-white-50">Boundaries of National Nature Reserves</a>
+                    <br>
+                    <br>
+                    <h6 class="text-white text-center mt-0"> Image Source</h6>
+                    <a href="https://www.skypixel.com/photos/ef90eefb-cfc1-4c20-8255-4baf2d65bdeb"
+                    class="small text-center text-white-50">Cover Image</a>
+                    <hr>
+                  </div>
+                  <div class="small text-center text-white-50">
+                    ​Produced by Team Chi-Squared for CASA0009​
+                  </div>
+              </div>
+          </footer>
 
         <script src="./js/overview_api.js"></script>
         <script src="./js/endangered_species.js"></script>

@@ -18,7 +18,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 	// color palette
 	col_pal_num = ['#ff420e', '#e29930', '#f98866', '#80bd9e', '#b7b8b6',
 	'#b3c100', '#4cb5f5', '#34675c', '#6e6702', '#db9501',
-	'#2e2300', '#c05805', '#f7efe2', '#f9a603', 'f70025',
+	'#2e2300', '#c05805', '#e6df44', '#f9a603', 'f70025',
 	'#f25c00', '#d61800', '#e94f08', '#7f152e', '#edae01',
 	'#2f496e', '#ed8c72', '#2988bc', '#eab364', '#acbd78'];
 
@@ -57,7 +57,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 			marker: {
 				size: 2.5,
 				autocolorscale: false,
-				color: col_pal[species],
+				color: Array(rowsFiltered.length).fill(col_pal[species]),
 			}
 
 		};

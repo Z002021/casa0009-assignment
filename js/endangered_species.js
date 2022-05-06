@@ -6,14 +6,26 @@ function unpack(rows, key) {
 }
 
 // Load data and map/plot
+//$.getJSON("http://dev.spatialdatacapture.org:8708/endangered", function(rows) {
 d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv', function(rows){
 
-
+	
 	// Get species list
 	var species_Array = unpack(rows, 'species');
 	var species = [...new Set(species_Array)];
 	species.sort()
+	
+	// color palette
+	col_pal_num = ['#ff420e', '#e29930', '#f98866', '#80bd9e', '#b7b8b6',
+	'#b3c100', '#4cb5f5', '#34675c', '#6e6702', '#db9501',
+	'#2e2300', '#c05805', '#f7efe2', '#f9a603', 'f70025',
+	'#f25c00', '#d61800', '#e94f08', '#7f152e', '#edae01',
+	'#2f496e', '#ed8c72', '#2988bc', '#eab364', '#acbd78'];
 
+	var col_pal = {}
+	for (var j=0;j<species.length;j++) {
+		col_pal[species[j]]=col_pal_num[j]
+	}
 
 	// Data for map
 	var data_map = species.map(function(species) {
@@ -43,13 +55,15 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 			lat: unpack(rowsFiltered, 'decimalLatitude'),
 			lon: unpack(rowsFiltered, 'decimalLongitude'),
 			marker: {
-				size: 2.5
+				size: 2.5,
+				autocolorscale: false,
+				color: col_pal[species],
 			}
 
 		};
 	});
 
-
+	//$.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
 	d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv', function(rows_cnt){
 
 		var data_graph = species.map(function(species) {
@@ -62,14 +76,12 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 				name: species,
 				legendgroup: species,
 				showlegend: false,
-				marker:{symbol:'square',size:8},
+				marker:{symbol:'square',size:8,color: col_pal[species]},
 				x: unpack(rowsFiltered, 'year'),
 				y: unpack(rowsFiltered, 'counts'),
 				mode: 'lines+markers'
 			};
 		});
-
-		console.log(data_graph)
 
 
 
@@ -105,7 +117,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 				y: 0.38,
 				xref: 'paper',
 				yref: 'paper',
-				text: 'Source: <a href="https://www.gbif.org/" style="color: rgb(0,0,0)">GBIF</a>',
+				//text: 'Source: <a href="https://www.gbif.org/" style="color: rgb(0,0,0)">GBIF</a>',
 				showarrow: false,
 				font: {
           color: "black",

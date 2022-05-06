@@ -5870,6 +5870,10 @@ progress {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
+.bg-green1{
+  --bs-bg-opacity:1;
+  background-color: rgba(233, 236, 235, 0.925) !important;
+}
 
 .bg-warning {
   --bs-bg-opacity: 1;
@@ -9309,7 +9313,7 @@ hr.divider-lgreen{
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f0feda;
+  background-color: rgba(233, 236, 235, 0.925);
   opacity: 1;
 }
 
@@ -9406,5 +9410,3 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
-
-

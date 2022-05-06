@@ -112,22 +112,9 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
           family: 'Arial'
         }
 			},
-			{
-				x: 0,
-				y: 0.18,
-				xref: 'paper',
-				yref: 'paper',
-				text: 'Source: <a href="https://www.gbif.org/" style="color: rgb(0,0,0)">GBIF</a>',
-				showarrow: false,
-				font: {
-
-          color: "black",
-          size: 12
-        }
-			},
       {
-				text: 'Select species names in Legend zone, the interactive map will display<br>the distribution of selected one. Hover over the points, it will present<br>the year and name of species. <br><br>Zoom in, green polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over<br>the chart, it will display the number of selected species.',
-				x: 0.977,
+				text: 'Select the species to display from the list on the right. <br>The map will display the locations of the selected species. <br>Hover over the points to see the year of the occurrence. <br>National Nature Reserves are also plotted in green polygon.<br><br>The chart below shows the trends in the count of the species<br> over the year. Hover over the chart to see the number of <br>the species in the year.',
+				x: 0.95,
 				xref: 'paper',
 				xanchor : 'auto',
 				align: 'left',
@@ -175,7 +162,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 					lon: -1
 				},
 				domain: {
-					x: [0,0.45],
+					x: [0,0.48],
 					y: [0.2,1]
 				},
 				style: 'carto-positron',

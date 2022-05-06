@@ -18,7 +18,7 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 	// color palette
 	col_pal_num = ['#ff420e', '#e29930', '#f98866', '#80bd9e', '#b7b8b6',
 	'#b3c100', '#4cb5f5', '#34675c', '#6e6702', '#db9501',
-	'#2e2300', '#c05805', '#f7efe2', '#f9a603', 'f70025',
+	'#2e2300', '#c05805', '#3b8a3e', '#f9a603', 'f70025',
 	'#f25c00', '#d61800', '#e94f08', '#7f152e', '#edae01',
 	'#2f496e', '#ed8c72', '#2988bc', '#eab364', '#acbd78'];
 
@@ -98,37 +98,12 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 			//title: 'Critically Endangered Species in England',
 			font: {color: 'black',size:12},
 			colorbar: false,
-			annotations: [{
-				x: 0,
-				y: 1.08,
-				xref: 'paper',
-				yref: 'paper',
-
-				text: ' ',
-				showarrow: false,
-				font: {
-          color: "black",
-          size: 23,
-          family: 'Arial'
-        }
-			},
-			{
-				x: 0,
-				y: 0.38,
-				xref: 'paper',
-				yref: 'paper',
-				//text: 'Source: <a href="https://www.gbif.org/" style="color: rgb(0,0,0)">GBIF</a>',
-				showarrow: false,
-				font: {
-          color: "black",
-          size: 12
-        }
-			},
+			annotations: [
       {
-				text: 'Select species names in Legend zone, the interactive map will display<br>the distribution of selected one. Hover over the points, it will present<br>the year and name of species. <br><br>Zoom in, green polygons represent National Nature Reserves of England.<br><br>The line chart shows trends in the number of species counts, hover over<br>the chart, it will display the number of selected species.',
-				x: 0.977,
+				text: 'Select the species to display from the list on the right. <br><br>The map on the left shows the locations of the occurrences of the <br>endangered species. Hover over the points to see the year and species of <br>the occurrences. The National Nature Reserves of England are also plotted <br>in green polygons. <br><br>The plot below shows the trend in the yearly count of the species. Hover <br>over the plot to see the counts in each year.',
+				x: 0.48,
 				xref: 'paper',
-				xanchor : 'auto',
+				xanchor : 'left',
 				align: 'left',
 				y: 1,
 				yref: 'paper',
@@ -170,8 +145,8 @@ d3.csv('https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/
 ],
 
 				center: {
-					lat: 53,
-					lon: -1
+					lat: 52.5,
+					lon: -2
 				},
 				domain: {
 					x: [0,0.45],

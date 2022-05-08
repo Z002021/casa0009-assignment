@@ -276,6 +276,20 @@ d3.json(
             responsive: true,
         });
 
+        // console.log(screen.width);
+        if (screen.width < 1200) {
+            document.getElementById("hotspot").style.height = "100vh";
+            layout.mapbox.domain.x = [0, 1];
+            layout.mapbox.domain.y = [0.5, 1];
+            layout.xaxis.domain = [0, 1];
+            layout.yaxis.domain = [0, 0.5];
+            layout.annotations[0].visible = false;
+            layout.legend.x = 0;
+            layout.updatemenus[0].x = 0;
+            layout.updatemenus[0].y = 0.93;
+            layout.margin.l = 50;
+        }
+
         Plotly.newPlot("hotspot", data, layout);
     }
 );

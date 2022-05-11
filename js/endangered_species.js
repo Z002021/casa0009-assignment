@@ -189,7 +189,7 @@ d3.csv(
 
                         center: {
                             lat: 53,
-                            lon: -1.55,
+                            lon: -2.1,
                         },
                         domain: {
                             x: [0, 0.35],

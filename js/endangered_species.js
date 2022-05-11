@@ -6,10 +6,10 @@ function unpack(rows, key) {
 }
 
 // Load data and map/plot
-//$.getJSON("http://dev.spatialdatacapture.org:8708/endangered", function(rows) {
-d3.csv(
-    "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv",
-    function (rows) {
+$.getJSON("http://dev.spatialdatacapture.org:8708/endangered", function(rows) {
+//d3.csv(
+ //   "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv",
+//    function (rows) {
         // Get species list
         var species_Array = unpack(rows, "species");
         var species = [...new Set(species_Array)];
@@ -83,10 +83,10 @@ d3.csv(
             };
         });
 
-        //$.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
-        d3.csv(
-            "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv",
-            function (rows_cnt) {
+        $.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
+        //d3.csv(
+        //    "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv",
+        //    function (rows_cnt) {
                 var data_graph = species.map(function (species) {
                     var rowsFiltered = rows_cnt.filter(function (row) {
                         return row.species === species;

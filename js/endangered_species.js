@@ -83,7 +83,7 @@ d3.csv(
             };
         });
 
-        //$.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
+
         d3.csv(
             "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv",
             function (rows_cnt) {

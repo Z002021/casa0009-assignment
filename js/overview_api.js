@@ -22,7 +22,7 @@ d3.json(
         d3.csv(
             "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/LA_ind.csv",
             function (rows) {
-        //$.getJSON("http://dev.spatialdatacapture.org:8708/lad", function(rows) {
+
 
                 console.log("Loaded CSV");
 

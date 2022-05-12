@@ -6,9 +6,9 @@ function unpack(rows, key) {
 }
 
 // Load data and map/plot
-$.getJSON("http://dev.spatialdatacapture.org:8708/endangered", function(rows) {
-// d3.csv(
-//     "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv",
+// $.getJSON("http://dev.spatialdatacapture.org:8708/endangered", function(rows) {
+d3.csv(
+    "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/endangered.csv",
     function (rows) {
         // Get species list
         var species_Array = unpack(rows, "species");

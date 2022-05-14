@@ -83,7 +83,7 @@ d3.csv(
             };
         });
 
-		//$.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
+        //$.getJSON("http://dev.spatialdatacapture.org:8708/year_species_count", function(rows_cnt) {
         d3.csv(
             "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/end_year_cnt.csv",
             function (rows_cnt) {
@@ -219,6 +219,23 @@ d3.csv(
                     mapboxAccessToken:
                         "pk.eyJ1IjoibmdsaWFuZ3dlaTE1IiwiYSI6ImNsMXhvdzB1bDAyNzkzZG43NzF2ajM3Y2EifQ.RnupTY7Atp7LreQEpiANLA",
                 });
+
+                if (screen.width < 1200) {
+                    document.getElementById("map").style.height = "100vh";
+                    layout.mapbox.domain.x = [0, 1];
+                    layout.mapbox.domain.y = [0.5, 1];
+                    layout.xaxis.domain = [0, 1];
+                    layout.yaxis.domain = [0, 0.5];
+                    layout.annotations[0].visible = false;
+                    layout.annotations[1].visible = false;
+                    layout.margin.l = 40;
+                    layout.margin.r = 30;
+                    layout.margin.t = 40;
+                    layout.legend.orientation = "h";
+                    layout.legend.x = 0.5;
+                    layout.legend.y = -0.13;
+                    layout.legend.xanchor = "center";
+                }
 
                 Plotly.newPlot("map", data, layout);
             }

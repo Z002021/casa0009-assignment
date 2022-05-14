@@ -19,12 +19,10 @@ d3.json(
         }
 
         // CHANGE TO D3 OR OWN URL
-		// $.getJSON("http://dev.spatialdatacapture.org:8708/lad", function(rows) {
+        // $.getJSON("http://dev.spatialdatacapture.org:8708/lad", function(rows) {
         d3.csv(
             "https://raw.githubusercontent.com/ngliangwei15/CASA0009-GroupAssignment/main/LA_ind.csv",
             function (rows) {
-
-
                 console.log("Loaded CSV");
 
                 var indicators = ["occ_den", "sp_richness", "sp_evenness"];
@@ -249,6 +247,10 @@ d3.json(
                             buttons: buttons_ind,
                         },
                     ],
+                    margin: {
+                        l: 80,
+                        r: 80,
+                    },
                 };
 
                 Plotly.setPlotConfig({
@@ -256,6 +258,27 @@ d3.json(
                         "pk.eyJ1IjoibmdsaWFuZ3dlaTE1IiwiYSI6ImNsMXhvdzB1bDAyNzkzZG43NzF2ajM3Y2EifQ.RnupTY7Atp7LreQEpiANLA",
                     responsive: true,
                 });
+
+                if (screen.width < 1200) {
+                    document.getElementById("overview").style.height = "100vh";
+                    layout.mapbox.domain.x = [0, 1];
+                    layout.mapbox.domain.y = [0.4, 1];
+                    layout.xaxis.domain = [0, 1];
+                    layout.yaxis.domain = [0, 0.4];
+                    layout.annotations[0].visible = false;
+                    layout.updatemenus[0].y = 0.93;
+
+                    data_combined[0].colorbar.x = 0.8;
+                    data_combined[1].colorbar.x = 0.8;
+                    data_combined[2].colorbar.x = 0.8;
+                    data_combined[0].colorbar.len = 0.6;
+                    data_combined[1].colorbar.len = 0.6;
+                    data_combined[2].colorbar.len = 0.6;
+                    layout.margin.l = 30;
+                    layout.margin.r = 30;
+                    layout.margin.b = 40;
+                    layout.margin.t = 40;
+                }
 
                 Plotly.newPlot("overview", data_combined, layout);
             }

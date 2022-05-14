@@ -231,10 +231,11 @@ d3.csv(
                     layout.margin.l = 40;
                     layout.margin.r = 30;
                     layout.margin.t = 40;
-                    layout.legend.orientation = "h";
-                    layout.legend.x = 0.5;
-                    layout.legend.y = -0.13;
-                    layout.legend.xanchor = "center";
+                    layout.showlegend = false;
+                    // layout.legend.orientation = "h";
+                    // layout.legend.x = 0.5;
+                    // layout.legend.y = -0.13;
+                    // layout.legend.xanchor = "center";
                 }
 
                 Plotly.newPlot("map", data, layout);
